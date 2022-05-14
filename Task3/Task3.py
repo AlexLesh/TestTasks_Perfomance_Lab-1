@@ -21,7 +21,7 @@ def taks3(name_json_test, name_json_values):
         with open('report.json', "w") as f:
             json.dump(test_results(json_test['tests'], json_values), f, indent=1)
 
-    return write_json(name_json_report, read_json(name_json_test), read_json(name_json_values)),\
+    return write_json( read_json(name_json_test), read_json(name_json_values)),\
            print("report.json создан")
 
 
