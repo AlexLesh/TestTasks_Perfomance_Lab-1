@@ -1,0 +1,2 @@
+Kopysov_Daniil
+Python 3.7.3
