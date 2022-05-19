@@ -15,5 +15,5 @@ def task4(file_name):
     return print(f'Минимальное количество ходов: {min_moves(read_file(file_name))}')
 
 if __name__ == '__main__':
-    data_array = input('Введите название файла с данными для массива: ')
+    data_array = str(argv[1])
     task4(data_array)

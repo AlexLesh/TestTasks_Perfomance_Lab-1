@@ -26,6 +26,5 @@ def taks3(name_json_test, name_json_values):
 
 
 if __name__ == '__main__':
-    name_test, name_values = input('Введите название файла с результатами тестов: '), \
-                             input('Введите название файла с тестами: ')
-    taks3(name_test, name_values)
+    name_test, name_values = str(argv[1]), str(argv[2])
+    taks3(name_test,name_values)

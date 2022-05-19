@@ -34,6 +34,5 @@ def check_points_in_circle(data_circle, data_points):
 
 
 if __name__ == '__main__':
-    f_data_cirlce, f_data_points = input('Введите название файла с данными для окружности: '),\
-                                   input('Введите название файла с данными для точек: ')
+    f_data_cirlce, f_data_points = str(argv[1]), str(argv[2])
     check_points_in_circle(f_data_cirlce, f_data_points)

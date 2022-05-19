@@ -1,3 +1,5 @@
+from sys import argv
+
 def circular_array(n, m):
     array = m * [i for i in range(1, n + 1)]
     b = ''
@@ -11,7 +13,7 @@ def circular_array(n, m):
 
 
 if __name__ == '__main__':
-    n, m = int(input('Размер кругового массива n: ')), int(input('Интервал m: '))
+    n, m = int(argv[1]), int(argv[2])
     if m == 1:
         raise Exception("Шаг не может ровняться 1")
     print(circular_array(n, m))
